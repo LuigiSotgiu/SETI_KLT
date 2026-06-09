@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# data
+blc5_2bit_guppi_57396_VOYAGER1_0002.0000.raw

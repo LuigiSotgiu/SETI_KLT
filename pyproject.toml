@@ -5,8 +5,18 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "astropy>=7.2.0",
+    "blimpy>=2.0.31",
+    "cupy-cuda13x>=14.1.1",
     "matplotlib>=3.10.9",
     "numpy>=2.4.6",
+    "pyqt6>=6.11.0",
     "scipy>=1.17.1",
     "setigen>=2.4.0",
+    "setuptools<82",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
 ]
