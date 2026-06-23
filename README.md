@@ -25,12 +25,15 @@ Following the formulation analyzed in our reference paper (*Trudu et al., 2020*)
 The algorithmic pipeline implemented in this package follows four mathematical steps:
 
 1. **Trajectory Matrix Formulation** The 1D complex baseband voltage vector of total length $N$ is segmented into $K$ blocks of length $W$ (where $W$ represents the `WINDOW_SIZE`). These blocks are arranged as rows to build the trajectory data matrix $X \in \mathbb{C}^{K \times W}$:
-   $$X = \begin{bmatrix} 
-   x[0] & x[1] & \cdots & x[W-1] \\ 
-   x[W] & x[W+1] & \cdots & x[2W-1] \\ 
-   \vdots & \vdots & \ddots & \vdots \\
-   x[(K-1)W] & x[(K-1)W+1] & \cdots & x[KW-1] 
-   \end{bmatrix}$$
+
+$$
+X = \begin{bmatrix} 
+x[0] & x[1] & \cdots & x[W-1] \\ 
+x[W] & x[W+1] & \cdots & x[2W-1] \\ 
+\vdots & \vdots & \ddots & \vdots \\ 
+x[(K-1)W] & x[(K-1)W+1] & \cdots & x[KW-1] 
+\end{bmatrix}
+$$
 
 2. **Covariance Matrix Estimation** The empirical spatial covariance matrix $R_{xx} \in \mathbb{C}^{W \times W}$ is estimated from the rows of $X$. In the standard C-KLT implementation, data is centered by subtracting the column-wise mean vector $\mu_X$ to isolate purely stochastic and alternating components:
    $$R_{xx} = \frac{1}{K} (X - \mu_X)^H (X - \mu_X)$$
