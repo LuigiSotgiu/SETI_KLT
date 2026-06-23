@@ -1,0 +1,13 @@
+diff --git a/setigen/voltage/_backend/headers.py b/setigen/voltage/_backend/headers.py
+index 895a8f9..d107013 100644
+--- a/setigen/voltage/_backend/headers.py
++++ b/setigen/voltage/_backend/headers.py
+@@ -181,7 +181,7 @@ def _header_populate_configuration(backend: Any,
+ 
+     header_dict[_HEADER_KEY_NBITS] = backend.num_bits
+     header_dict[_HEADER_KEY_CHAN_BW] = backend.chan_bw * 1e-6
+-    header_dict[_HEADER_KEY_NPOL] = backend.num_pols
++    header_dict[_HEADER_KEY_NPOL] = backend.num_pols * 2
+ 
+     header_dict[_HEADER_KEY_BLOCSIZE] = backend.block_size
+     header_dict[_HEADER_KEY_SCANLEN] = backend.obs_length

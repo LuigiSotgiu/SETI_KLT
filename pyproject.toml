@@ -1,7 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
-name = "codes"
+name = "seti_klt"
 version = "0.1.0"
-description = "Add your description here"
+description = "KLT analysis pipeline for GUPPI raw files"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -14,7 +18,9 @@ dependencies = [
     "scipy>=1.17.1",
     "setigen>=2.4.0",
     "setuptools<82",
+    "tqdm",
 ]
+
 
 [dependency-groups]
 dev = [

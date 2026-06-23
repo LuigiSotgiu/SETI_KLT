@@ -241,43 +241,6 @@ wheels = [
 ]
 
 [[package]]
-name = "codes"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "astropy" },
-    { name = "blimpy" },
-    { name = "cupy-cuda13x" },
-    { name = "matplotlib" },
-    { name = "numpy" },
-    { name = "pyqt6" },
-    { name = "scipy" },
-    { name = "setigen" },
-    { name = "setuptools" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "astropy", specifier = ">=7.2.0" },
-    { name = "blimpy", specifier = ">=2.0.31" },
-    { name = "cupy-cuda13x", specifier = ">=14.1.1" },
-    { name = "matplotlib", specifier = ">=3.10.9" },
-    { name = "numpy", specifier = ">=2.4.6" },
-    { name = "pyqt6", specifier = ">=6.11.0" },
-    { name = "scipy", specifier = ">=1.17.1" },
-    { name = "setigen", specifier = ">=2.4.0" },
-    { name = "setuptools", specifier = "<82" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
-
-[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
@@ -1494,6 +1457,45 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/11/2f/b29eafe4a3fbc3d6de9662b36e028d5f039e72d345e05c250e121a230dd4/scipy-1.17.1-cp314-cp314t-win_amd64.whl", hash = "sha256:eb092099205ef62cd1782b006658db09e2fed75bffcae7cc0d44052d8aa0f484", size = 37345327, upload-time = "2026-02-23T00:22:24.442Z" },
     { url = "https://files.pythonhosted.org/packages/07/39/338d9219c4e87f3e708f18857ecd24d22a0c3094752393319553096b98af/scipy-1.17.1-cp314-cp314t-win_arm64.whl", hash = "sha256:200e1050faffacc162be6a486a984a0497866ec54149a01270adc8a59b7c7d21", size = 25489165, upload-time = "2026-02-23T00:22:29.563Z" },
 ]
+
+[[package]]
+name = "seti-klt"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "astropy" },
+    { name = "blimpy" },
+    { name = "cupy-cuda13x" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pyqt6" },
+    { name = "scipy" },
+    { name = "setigen" },
+    { name = "setuptools" },
+    { name = "tqdm" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ipykernel" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "astropy", specifier = ">=7.2.0" },
+    { name = "blimpy", specifier = ">=2.0.31" },
+    { name = "cupy-cuda13x", specifier = ">=14.1.1" },
+    { name = "matplotlib", specifier = ">=3.10.9" },
+    { name = "numpy", specifier = ">=2.4.6" },
+    { name = "pyqt6", specifier = ">=6.11.0" },
+    { name = "scipy", specifier = ">=1.17.1" },
+    { name = "setigen", specifier = ">=2.4.0" },
+    { name = "setuptools", specifier = "<82" },
+    { name = "tqdm" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
 
 [[package]]
 name = "setigen"
