@@ -1,0 +1,25 @@
+=== LOG STARTED 20260623_115646 ===
+Log Level: INFO
+
+
+============================================================
+=== VOYAGER 1 KLT PIPELINE INITIALIZATION
+============================================================
+
+============================================================
+=== VOYAGER 1 ANALYSIS SETUP
+============================================================
+[11:56:50] [INFO]     Input File: blc5_2bit_guppi_57396_VOYAGER1_0002
+[11:56:50] [INFO]     Polarization: 0
+[11:56:50] [INFO]     Window Size (W): 1024
+[11:56:50] [INFO]     Samples Loaded (N): 16777216
+[11:56:50] [INFO]     Retained Components: 3
+[11:59:55] [INFO]     Top 3 Eigenvalues: 4086.50, 2821.35, 2736.32
+[11:59:55] [INFO]     First-to-Second Eigenvalue Gap Ratio: 1.45x
+
+============================================================
+=== GENERATING REFERENCE-STYLE DIAGNOSTIC PLOTS
+============================================================
+[12:00:10] [INFO]     Pipeline executed successfully. All assets saved locally.
+
+=== LOG ENDED 20260623_120010 ===

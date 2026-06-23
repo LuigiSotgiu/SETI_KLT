@@ -6,7 +6,7 @@ Beyond standard testing, this folder serves as an exploration of a fundamental m
 
 ---
 
-## 📖 Theoretical Background
+## Theoretical Background
 
 To understand the tests in this directory, it is helpful to understand how 1D time-series data is processed by the Covariance KLT (C-KLT).
 
@@ -25,7 +25,7 @@ Centered_Matrix = Matrix - Column_Means
 
 ---
 
-## ⚠️ The Synchronous Phase Problem
+## The Synchronous Phase Problem
 
 During our internship testing, we encountered a strange anomaly: when a very strong synthetic signal was injected at specific frequencies, the KLT completely failed to detect it. The dominant eigenvalue collapsed, and the reconstructed signal was just noise. Why?
 
@@ -47,7 +47,7 @@ We achieve this by injecting our synthetic signals using a **fractional offset**
 
 ---
 
-## 📓 Notebook Overview
+## Notebook Overview
 
 ### `injected_signal.ipynb`
 This is the main testing ground for synthetic data. In this notebook, you will see the theory put into practice:

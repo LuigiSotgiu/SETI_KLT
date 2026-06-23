@@ -2,7 +2,7 @@
 
 This repository contains a Python framework developed during an internship to apply various Karhunen-Loève Transform (KLT) methodologies to radio astronomy data. The primary goal of this project is to process and analyze time-voltage `GUPPI RAW` files (commonly used in SETI research) to test the extraction and reconstruction of weak continuous-wave (CW) signals submerged in thermal noise.
 
-## 🧠 Background: Why KLT?
+## Background: Why KLT?
 
 In traditional radio astronomy, signals are often detected by accumulating power in frequency bins over time (using FFTs). However, if a signal is extremely weak, the variance of the thermal noise can mask it completely.
 
@@ -18,7 +18,7 @@ The core `KLT` class currently tests three structural approaches:
 
 ---
 
-### 📐 Deep Dive: Covariance KLT (C-KLT) Framework
+### Deep Dive: Covariance KLT (C-KLT) Framework
 
 Following the formulation analyzed in our reference paper (*Trudu et al., 2020*), the C-KLT models a 1D discrete time-series voltage signal $x[n]$ by projecting it onto an adaptive, data-driven orthogonal basis rather than using static trigonometric kernels like the Fourier Transform.
 
@@ -45,7 +45,7 @@ The algorithmic pipeline implemented in this package follows four mathematical s
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 The project is structured as an installable Python package (`seti_klt`) accompanied by practical test notebooks. 
 
@@ -54,23 +54,23 @@ The project is structured as an installable Python package (`seti_klt`) accompan
 ├── pyproject.toml              # Package definition and dependencies manager (via uv)
 ├── setigen_npol_fix.patch      # Essential patch for the Setigen library (NPOL header fix)
 │
-├── src/seti_klt/               # 📦 CORE PACKAGE
+├── src/seti_klt/               # CORE PACKAGE
 │   ├── KLT.py                  # The main KLT class and algorithmic core
 │   └── utils/                  # I/O utilities, dynamic paths, and structured loggers
 │
-├── notebooks/                  # 📓 TESTS & ANALYSIS
+├── notebooks/                  # TESTS & ANALYSIS
 │   ├── injected_signals/       # Synthetic signal tests 
 │   └── voyager_1/              # Real-world telemetry extraction tests from GBT observations
 │
-├── data/                       # 💾 RAW DATA (Ignored in Git, local heavy files)
-└── outputs/                    # 📊 RESULTS (Locally generated figures, logs, and raw cuts)
+├── data/                       # RAW DATA (Ignored in Git, local heavy files)
+└── outputs/                    # RESULTS (Locally generated figures, logs, and raw cuts)
 ```
 
 > **Note:** For detailed explanations on specific tests (like the "Synchronous Phase" phenomenon or Voyager 1 decoding), please refer to the specific `README.md` files located inside the `notebooks/` subdirectories.
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 This project uses `uv` (or standard `pip` + `venv`) for dependency management. To ensure paths resolve correctly and local imports work inside the notebooks, the project must be installed in **editable mode**.
 
@@ -99,7 +99,7 @@ uv pip install -e .
 
 ---
 
-## 💻 Quick Start Example
+## Quick Start Example
 
 Once installed, you can use the package in your scripts or Jupyter Notebooks seamlessly:
 

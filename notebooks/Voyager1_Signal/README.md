@@ -6,7 +6,7 @@ While synthetic signals provide a clean testing environment, real-world data int
 
 ---
 
-## 📡 The Challenges of Real-World Data
+## The Challenges of Real-World Data
 
 Working with actual observatory data requires accounting for physical and digital anomalies that do not exist in ideal simulations:
 
@@ -18,7 +18,7 @@ Unlike the perfectly flat Gaussian noise generated in simulations, real observat
 
 ---
 
-## 🛰️ Multi-Component KLT & Telemetry
+## Multi-Component KLT & Telemetry
 
 In our synthetic tests, we searched for a pure, unmodulated Continuous-Wave (CW) signal. A pure CW signal is mathematically highly correlated and can typically be captured entirely by retaining a single dominant eigenvector (`N_EIGENVECS = 1`).
 
@@ -27,7 +27,7 @@ If we only keep the first eigenvector, the KLT will isolate the carrier but migh
 
 ---
 
-## 📓 Notebook Overview
+## Notebook Overview
 
 ### `CKLT_Voyager1.ipynb`
 This notebook walks through the real-data extraction process:

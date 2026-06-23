@@ -1,0 +1,35 @@
+=== LOG STARTED 20260623_115644 ===
+Log Level: INFO
+
+
+============================================================
+=== KLT PIPELINE INITIALIZATION
+============================================================
+
+============================================================
+=== SIMULATION PARAMETERS
+============================================================
+[11:56:48] [INFO]     Target Channel: 1
+[11:56:48] [INFO]     Injection Freq (MHz): 6003.8086
+[11:56:48] [INFO]     Per-sample SNR (dB): -45.0000
+[11:56:48] [INFO]     Amplitude (Level): 0.0080
+[11:56:48] [INFO]     Window Size (KLT): 512
+[11:56:48] [INFO]     Output File: outputs/raw_data/easy_test_ch1_snr-45.0000.raw
+
+============================================================
+=== GUPPI RAW GENERATION WITH SETIGEN
+============================================================
+[11:56:50] [INFO]     Starting Polyphase Filterbank simulation...
+[11:58:12] [INFO]     RAW file successfully written to: outputs/raw_data/easy_test_ch1_snr-45.0000.raw
+
+============================================================
+=== DATA LOADING AND POWER SCAN
+============================================================
+
+============================================================
+=== SPECTRAL ANALYSIS AND KLT RECONSTRUCTION
+============================================================
+[11:58:48] [INFO]     CKLT Applied (Window Size = 512, Components = 1)
+[11:58:51] [INFO]     Processing and plotting completed.
+
+=== LOG ENDED 20260623_115851 ===
