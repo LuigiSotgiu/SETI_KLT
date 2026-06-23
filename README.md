@@ -79,7 +79,7 @@ This project uses `uv` (or standard `pip` + `venv`) for dependency management. T
 
 **1. Clone the repository:**
 ```bash
-git clone [https://github.com/LuigiSotgiu/seti_klt.git](https://github.com/LuigiSotgiu/seti_klt.git)
+git clone https://github.com/LuigiSotgiu/seti_klt.git
 cd seti_klt
 ```
 
